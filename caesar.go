@@ -35,7 +35,7 @@ func cipher(input string, offset int) string {
 }
 
 func main() {
-	input := " "
+	input := "Hello, citizen."
 
-	fmt.Println(cipher(input, 0))
+	fmt.Println(cipher(input, 6))
 }
