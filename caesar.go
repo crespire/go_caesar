@@ -21,9 +21,7 @@ func cipher(input string, offset int) string {
 			startIndex = 97
 		}
 
-		if c >= 65 && c <= 90 {
-			wrappedChar = getOffset(startIndex, int(c), offset)
-		} else if c >= 97 && c <= 122 {
+		if (c >= 65 && c <= 90) || (c >= 97 && c <= 122) {
 			wrappedChar = getOffset(startIndex, int(c), offset)
 		} else {
 			wrappedChar = getOffset(startIndex, int(c), 0)
