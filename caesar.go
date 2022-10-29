@@ -24,7 +24,7 @@ func cipher(input string, offset int) string {
 		if (c >= 65 && c <= 90) || (c >= 97 && c <= 122) {
 			wrappedChar = getOffset(startIndex, int(c), offset)
 		} else {
-			wrappedChar = getOffset(startIndex, int(c), 0)
+			wrappedChar = rune(c)
 		}
 		slice = append(slice, string(wrappedChar))
 	}
